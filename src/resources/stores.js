@@ -7,9 +7,7 @@ import {
 
 export const StoresList = () => (
   <List perPage={60}>
-    <Datagrid bulkActionButtons={
-      <BulkExportButton />
-    }>
+    <Datagrid bulkActionButtons={ <BulkExportButton /> }>
       <TextField source="id" />
       <TextField source="name" />
       <TextField source="count" label="Total titles" />
