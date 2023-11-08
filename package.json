@@ -1,6 +1,6 @@
 {
   "name": "prices-admin",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": true,
   "homepage": "https://prices-admin.dictummortuum.com",
   "dependencies": {
