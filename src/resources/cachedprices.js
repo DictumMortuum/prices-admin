@@ -16,6 +16,7 @@ import {
   TextInput,
   ReferenceInput,
   BulkExportButton,
+  DateInput,
 } from 'react-admin';
 import { Link } from '@mui/material';
 
@@ -26,9 +27,10 @@ const postFilters = [
     { id: 1, name: "Preorder" },
     { id: 2, name: "Out of Stock"}
   ]} />,
-  <ReferenceInput reference="stores" source="store_id" perPage={60} alwaysOn>
+  <ReferenceInput reference="stores" label="Store" source="store_id" perPage={60} alwaysOn>
     <SelectInput label="Store" source="id" optionText="name" />
-  </ReferenceInput>
+  </ReferenceInput>,
+  <DateInput source="updated@gt" label="Updated" alwaysOn />,
 ];
 
 const renderStock = ({ stock }) => {
