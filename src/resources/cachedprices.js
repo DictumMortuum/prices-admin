@@ -31,6 +31,10 @@ const postFilters = [
     <SelectInput label="Store" source="id" optionText="name" />
   </ReferenceInput>,
   <DateInput source="updated@gt" label="Updated" alwaysOn />,
+  <SelectInput source="whole" label="Whole Word Search" alwaysOn choices={[
+    { id: 0, name: "Off" },
+    { id: 1, name: "On" },
+  ]} />,
 ];
 
 const renderStock = ({ stock }) => {

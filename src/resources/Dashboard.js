@@ -1,13 +1,14 @@
 import * as React from 'react';
 import Container from '../components/Container';
 import { Typography, Stack } from '@mui/material';
+import pkg from '../../package.json';
 
 const Component = () => {
   return (
     <Container title="Dashboard">
       <Stack p={4}>
         <Typography>
-          Καλώς ήρθατε στο prices v3!
+          Καλώς ήρθατε στο prices v{pkg.version}!
         </Typography>
         <Typography>
           Σε αυτό το site μπορείτε να βρείτε τιμές από τα μαγαζιά επιτραπεζίων μαγαζιών της Ελλάδας.
