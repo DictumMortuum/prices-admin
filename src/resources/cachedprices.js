@@ -65,7 +65,7 @@ const renderUrl = ({ name, url }) => {
 // }
 
 export const CachedpriceList = () => (
-  <List filters={postFilters}>
+  <List filters={postFilters} debounce={1000}>
     <Datagrid bulkActionButtons={ <BulkExportButton /> }>
       <TextField source="id" />
       <ImageField source="store_thumb" />

@@ -1,8 +1,8 @@
 {
   "name": "prices-admin",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "private": true,
-  "homepage": "https://prices-admin.dictummortuum.com",
+  "homepage": "https://prices.dictummortuum.com",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
