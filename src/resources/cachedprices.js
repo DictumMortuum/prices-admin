@@ -35,6 +35,10 @@ const postFilters = [
     { id: 0, name: "Off" },
     { id: 1, name: "On" },
   ]} />,
+  <SelectInput source="tag" label="Family" alwaysOn choices={[
+    { id: "", name: "" },
+    { id: "COIN", name: "COIN" },
+  ]} />,
 ];
 
 const renderStock = ({ stock }) => {
