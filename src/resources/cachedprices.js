@@ -31,6 +31,9 @@ const postFilters = [
     <SelectInput label="Store" source="id" optionText="name" />
   </ReferenceInput>,
   <DateInput source="updated@gt" label="Updated" alwaysOn />,
+  <SelectInput source="percentage@gt" label="Discount" alwaysOn choices={
+    Array.from({length: 8}, (_, i) => i + 2).map(d => ({ id: d*10, name: `${d}0%`}))
+  } />,
   <SelectInput source="whole" label="Whole Word Search" alwaysOn choices={[
     { id: 0, name: "Off" },
     { id: 1, name: "On" },
@@ -82,9 +85,11 @@ export const CachedpriceList = () => (
       </ReferenceField>
       <FunctionField label="Name" render={renderUrl} />
       <TextField source="price" />
+      <TextField source="original_price" />
       <FunctionField label="Stock" render={renderStock} />
       <DateField source="created" />
       <DateField source="updated" />
+      <TextField source="percentage" label="Discount" />
       {/* <FunctionField label="Boardgame" render={renderBoardgame} /> */}
       {/* <EditButton /> */}
       {/* <DeleteButton /> */}
